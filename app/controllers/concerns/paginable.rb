@@ -5,7 +5,7 @@ module Paginable
     (params[:page] || 1).to_i
   end
 
-  def current_page
+  def per_page
     (params[:per_page] || 20).to_i
   end
 end
