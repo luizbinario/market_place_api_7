@@ -71,6 +71,9 @@ GEM
     bootsnap (1.18.3)
       msgpack (~> 1.2)
     builder (3.2.4)
+    bullet (7.1.6)
+      activesupport (>= 3.0.0)
+      uniform_notifier (~> 1.11)
     concurrent-ruby (1.3.1)
     crass (1.0.6)
     date (3.3.4)
@@ -176,6 +179,7 @@ GEM
     timeout (0.4.1)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
+    uniform_notifier (1.16.0)
     websocket-driver (0.7.6)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
@@ -187,6 +191,7 @@ PLATFORMS
 DEPENDENCIES
   bcrypt (~> 3.1)
   bootsnap
+  bullet (~> 7.1)
   debug
   faker (~> 3.4)
   jsonapi-serializer (~> 2.2)
