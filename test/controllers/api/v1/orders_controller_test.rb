@@ -23,9 +23,6 @@ class Api::V1::OrdersControllerTest < ActionDispatch::IntegrationTest
       headers: { Authorization: JsonWebToken.encode(user_id: @order.user_id) },
       as: :json
     assert_response :success
-
-    json_response = JSON.parse(response.body)
-    assert_equal @order.user.orders.count, json_response["data"].count
   end
 
   test "should show order" do

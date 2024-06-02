@@ -1,4 +1,6 @@
 class Api::V1::OrdersController < ApplicationController
+  include Paginable
+
   before_action :check_login, only: %i[index show create]
 
   def index
