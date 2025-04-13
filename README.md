@@ -49,7 +49,7 @@ Gerenciar produto
 export TKN="eyJhbG...WqaXAcnE" # from /api/v1/tokens
 # criar
 curl -X POST -H "Authorization: $TKN" -d "product[title]=Bag" -d "product[price]=10" localhost:3000/api/v1/products
-# update: publicar e adiconar ao estoque
+# atualizar: publicar e adiconar ao estoque
 curl -X PATCH -H "Authorization: $TKN" -d "product[published]=true" -d "product[quantity]=2" localhost:3000/api/v1/products/19
 # listar
 curl -H "Authorization: $TKN" localhost:3000/api/v1/products
