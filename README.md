@@ -22,7 +22,7 @@ O objetivo desta aplicação não é apenas te ensinar a criar uma API com Rails
 ## Configuração
 
 ```bash
-git clone https://github.com/madeindjs/market_place_api_6
+git clone https://github.com/luizbinario/market_place_api_7
 cd market_place_api_6
 bundle install
 rake db:create
@@ -47,13 +47,13 @@ Gerenciar produto
 
 ```sh
 export TKN="eyJhbG...WqaXAcnE" # from /api/v1/tokens
-# create
+# criar
 curl -X POST -H "Authorization: $TKN" -d "product[title]=Bag" -d "product[price]=10" localhost:3000/api/v1/products
-# update: publish and add stock
+# update: publicar e adiconar ao estoque
 curl -X PATCH -H "Authorization: $TKN" -d "product[published]=true" -d "product[quantity]=2" localhost:3000/api/v1/products/19
-# list
+# listar
 curl -H "Authorization: $TKN" localhost:3000/api/v1/products
-# delete
+# excluir/deletar
 curl -X DELETE -H "Authorization: $TKN" localhost:3000/api/v1/products/19
 ```
 
@@ -61,11 +61,11 @@ Gerenciar pedido
 
 ```sh
 export TKN="eyJhbG...WqaXAcnE" # from /api/v1/tokens
-# create
+# criar
 curl -X POST -H "Authorization: $TKN" -d "order[product_ids_and_quantities][][product_id]=20" -d "order[product_ids_and_quantities][][quantity]=1" localhost:3000/api/v1/orders
-# list
+# listar
 curl -H "Authorization: $TKN" localhost:3000/api/v1/orders
-# show
+# exibir
 curl -H "Authorization: $TKN" localhost:3000/api/v1/orders/7
 ```
 
