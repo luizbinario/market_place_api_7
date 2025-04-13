@@ -23,7 +23,7 @@ O objetivo desta aplicação não é apenas te ensinar a criar uma API com Rails
 
 ```bash
 git clone https://github.com/luizbinario/market_place_api_7
-cd market_place_api_6
+cd market_place_api_7
 bundle install
 rake db:create
 rake db:migrate
