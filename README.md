@@ -29,7 +29,7 @@ rake db:create
 rake db:migrate
 ```
 
-## Usage
+## Uso
 
 Criar usuário
 
