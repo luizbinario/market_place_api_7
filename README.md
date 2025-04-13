@@ -8,7 +8,7 @@ O objetivo foi apenas adaptar o projeto para que funcione corretamente com o **R
 Este projeto está licenciado sob a [Licença MIT](./LICENSE), com os devidos créditos ao autor original.
 
 
-Este repositório contém o exemplo de aplicação do livro [API on Rails 6](https://github.com/madeindjs/api_on_rails).
+Este repositório contém o exemplo de aplicação do livro [API on Rails 7](https://github.com/madeindjs/api_on_rails).
 
 A aplicação final será um mercado simples, onde os usuários poderão fazer pedidos, cadastrar produtos e mais. Existem várias opções para criar uma loja online, como [Shopify](http://shopify.com), [Spree](http://spreecommerce.com/) ou [Magento](http://magento.com).
 
